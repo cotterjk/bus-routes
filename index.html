@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>#1/SL</title>
+        <link rel="stylesheet" target="_blank" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" target="_blank" href="style.css">
+    </head>
+    <body>
+        <!-- Output copied to clipboard! -->
+
+        <!-----
+
+        Yay, no errors, warnings, or alerts!
+
+        Conversion time: 0.447 seconds.
+
+
+        Using this HTML file:
+
+        1. Paste this output into your source file.
+        2. See the notes and action items below regarding this conversion run.
+        3. Check the rendered output (headings, lists, code blocks, tables) for proper
+           formatting and use a linkchecker before you publish this page.
+
+        Conversion notes:
+
+        * Docs to Markdown version 1.0β33
+        * Thu Jun 16 2022 17:14:49 GMT-0700 (PDT)
+        * Source doc: Bus #1/Silver Line Comparison TEXT
+        ----->
+
+        <div class="writeup-container">
+            <h1>Two bus systems, </br>one commute route</h1>
+            <h2>When and how are they late?</h2>
+        </div>
+        <details open>
+            <summary class="charts-toggle">
+                Collapse / Expand Charts
+            </summary>
+            <div class="row chart-container">
+                <div class="col-sm-6 chart-container">
+                    <img src="assets/logos/BusLogos.png">
+                </div>
+                <div class="col-sm-6 chart-container">
+                </div>
+            </div>
+            <div class="row chart-container">
+                <div class="col-sm-6 chart-container">
+                    <h3 class="chart header">Northbound, Weekdays</h3>
+                    <object data="assets/charts/BusTimes_NB_weekDAYS_withLabels.svg"></object>
+                </div>
+                <div class="col-sm-6 chart-container">
+                    <h3 class="chart header">Southbound, Weekdays</h3>
+                    <object data="assets/charts/BusTimes_SB_weekDAYS.svg"></object>
+                </div>
+            </div>
+            <div class="row chart-container">
+                <div class="col-sm-6 chart-container">
+                    <h3 class="chart header">Northbound, Weekends</h3>
+                    <object data="assets/charts/BusTimes_NB_weekENDS.svg"></object>
+                </div>
+                <div class="col-sm-6 chart-container">
+                    <h3 class="chart header">Southbound, Weekends</h3>
+                    <object data="assets/charts/BusTimes_SB_weekENDS.svg"></object>
+                </div>
+            </div>
+        </details>
+        </div>
+        <details open>
+            <summary>
+                Backstory
+            </summary>
+            <div class="writeup-container">
+                <p>
+                Two bus routes trace my commute very similarly.
+                </p>
+                <p>
+                One is the Rapid route #1, which operates in a very recognizable way: riders wait at stops along the road, where the bus arrives roughly every half hour. They scan their refillable fare card against a panel by the driver’s door before taking their seat. Riders have to pull a hanging cord to request a stop. If no one is waiting to get on at a stop, and if no one pulls the cord, the driver carries on without slowing down.
+                </p>
+                <p>
+                The other is the Silver Line, Michigan’s first <a target="_blank" href="https://en.wikipedia.org/wiki/Bus_rapid_transit">bus rapid transit system</a>. This means it runs more like a train: Passengers hop on and off through automatic doors with a fare card they’re supposed to validate beforehand on the designated platforms. (Occasionally there are fare enforcement officers aboard to check tickets, which I’ve <a target="_blank" href="https://cotterjk.github.io/bus/">written about before.</a>) The platforms are raised, to be flush with the bus' boarding level. For a stretch of the route, no fare is required or enforced, though not the stretch I ride. The bus stops at every platform, so riders don’t request stops with a cord. For some stretches, it has a designated lane and left turn light. Most of the day, it comes every 15 minutes.
+                </p>
+                <p>
+                Hanging from the Silver Line’s platforms is a gold marquee sign, displaying the estimated arrival time for the next few buses, which respond as the bus runs late or early. (Regular bus routes used to post a paper schedule for that stop, with no indication of where an actual bus was, now. They’ve recently replaced even that with a QR code...)
+                </p>
+            </div>
+        </div>
+        <div class="row" class="image-container">
+            <img src="assets/stitches/SLSchedule.png" alt="Cross-stitch of gold thread on black background, reading that a Silver Line bus is arriving, and another is coming in 15 minutes in appearance of the hanging LED schedules on arrival platforms">
+        </div>
+        <div class="writeup-container">
+            <p>
+            Many mornings, I would rush to my Silver Line bus stop only to read on the marquee that it was late. In the meantime, I’d look behind me to see the #1 pass by. I started to think which route would really serve me better, or at least how they differed.
+            </p>
+            <p>
+            I used to take the #1 home since there was a stop mere feet from my office door, but during rush hour and in the snow, it proved too unreliable. I have to walk a few blocks to the Silver Line stop, and I often just miss one, but another comes in half the time. Besides, Google Maps and the posted schedules told me that the Silver Line was the better choice.
+            </p>
+            <p>
+            But I wondered, if I could plot all those true deviations from that schedule, how would the different buses, the different bussing systems, compare? And the Silver Line’s hanging displays implied that this realistic data was available.
+            </p>
+        </div>
+        <div class="row" class="image-container">
+            <img src="assets/stitches/StopRequested.png" alt="Cross-stitch of red thread on black background, reading 'Stop Requested' in appearance of a bus interior LED marque">
+        </div>
+    </details>
+    <details open>
+        <summary>
+            Gathering Data
+        </summary>
+        <div class="writeup-container">
+            <p>
+            Among the Rapid’s online schedules is a <a target="_blank" href="https://connect.ridetherapid.org/InfoPoint/">real-time bus tracker</a> (also available through the <a target="_blank" href="https://apps.apple.com/us/app/mystop-mobile/id591959423">myStop app</a>).
+            </p>
+            <p>
+            <img class="bus-screenshots" src="assets/screenshots/mystop.png" alt="Screenshot of the My Stop mobile app">
+            </p>
+            <p>
+            Each stop also has a <a target="_blank" href="https://connect.ridetherapid.org/InfoPoint/Stops/Stop/20">unique URL</a>, updating in real time, essentially an invisible Silver Line hanging display for every other stop on every other route. (However, this tracker actually doesn’t always exactly match the SL’s hanging displays. I still haven’t figured out the exact networking between the bus, the display, and the app.)
+            </p>
+            <p>
+            <img class="bus-screenshots"src="assets/screenshots/scrapedpage.png" alt="Screenshot of the a bus stop's real-time schedule webpage">
+            </p>
+            <p>
+            These are the pages scraped for delay data. It was my first time writing my own web scraper! My scraper logged each bus arrival’s scheduled time and actual time. Specifically, every time a bus was <em>scheduled</em> to arrive, if that bus was 'Status: Late', it logged the <em>estimated arrival time at that scheduled moment.</em>
+            </p>
+            <p>
+            I scraped the pages of four locations—the Silver Line and #1 stops I could take north in the morning, and the two I could take south in the evening, and ran them from the last snowstorm through the spring. I ended up with eleven weeks of usable data, logging every late bus.
+            </p>
+        </div>
+        </details>
+        <details open>
+            <summary>
+                Design Process
+            </summary>
+            <div class="writeup-container">
+                <p>
+                My scraper logged in a .json format, which I converted to .csv. I used <a target="_blank" href="https://processing.org/">Processing</a> to draw a line for every entry. The variable I’ll discuss drawing with I call “lateness” = the difference between scheduled and actual arrivals. I took those vectors into Illustrator to play with a data “shape.” As long as I kept all the proportions consistent across the day, the schedule was intact.
+                </p>
+            </div>
+            <div class="row justify-content-center sketches-container">
+                <div class="col-sm-4 sketch-container">
+                    <img src="assets/concepts/design-02.png">
+                    <p class="sketch-caption">This was how I exported the sketches from Processing. This is the shape I took into Illustrator even though I didn’t want to use it, since it encoded data in both length and stroke weight, which I could collapse later as I experimented. More opaque indicates more frequently late. This opacity was hard to distinguish, the length and stroke weight was redundant but distracting, and the overlapping lines took no advantage of the vertical dimension.</p>
+                </div>
+                <div class="col-sm-4 sketch-container">
+                    <img src="assets/concepts/design-03.png">
+                    <p class="sketch-caption">I almost went with this—I thought it was the prettiest. But the slope of the triangles and the way they squish towards the triangles’ peak was distracting. Also, the vertical dimension had no encoding.</p>
+                </div>
+                <div class="col-sm-4 sketch-container">
+                    <img src="assets/concepts/design-04.png">
+                    <p class="sketch-caption">Sort of a reversal of the last, trying to emphasize the actual arrival. It’s still weak in the same ways, but also a pretty shape to use for something else.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center sketches-container">
+                <div class="col-sm-4 sketch-container">
+                    <img src="assets/concepts/design-01.png">
+                    <p class="sketch-caption">Instead of stroke width, I tried distributing the instances shifted down by their lateness. This was redundant to the line length. The endpoints always traced a straight line down, at the same angle.</p>
+                </div>
+                <div class="col-sm-4 sketch-container">
+                    <img src="assets/concepts/design-05.png">
+                    <p class="sketch-caption">Evenly spacing each instance and sorting by their lateness exposed a curve which actually indicated something. The vertical stacked up how many times the bus was late, while the horizontal length encodes the late-ness. Sort of quality and quantity. No stroke width or opacity needed. This gave me the most communicative shape in the plainest way. Rotating this and putting the times in the middle gave me a nice scrollable side-by-side comparison.</p>
+                </div>
+            </div>
+            </div>
+        </details>
+        <details open>
+            <summary>
+                Findings
+            </summary>
+            <div class="writeup-container">
+                <p>
+                These charts show an 11-week period, meaning each stop had 55 weekday arrivals. The stop with the most late arrivals had 42, and many stops have only a few. Generally, the buses do pretty well. The Silver Line is more often late, but it has almost twice as many chances to be. It is slightly more held back during rush hours between 4pm–7pm on weekdays, but generally, the buses are much more competitive than I expected.
+                </p>
+                <p>
+                My sense is that stopping and opening freely at <em>every</em> station loses the Silver Line as much time as it saves. Additionally, the ticket scanning sensor at Silver Line platforms confuses people more than paying at the driver, and feigned for officers or not, these conversations slow the bus down. I’ve never heard the #1 bus drivers complain aloud about riders making them late, but it’s common from Silver Line drivers. Between this and the hanging schedules, the Silver Line definitely appears more efficient.
+                </p>
+                <p>
+                Though I’m not sure which model is more user-friendly. As a child riding the (standard system) #24, I remember having a lot of anxiety about pulling the cord at the right moment. The Silver Line announcing and stopping at every station does feel less intimidating. This and the level-boarding allowed by the raised platforms makes it much more accessible for wheelchair users.
+                </p>
+                <p>
+                Any of its shortcomings are surpassed by the fact that it comes twice as often. Waiting 15 minutes at a Silver Line platform (which have seats, unlike most bus stops here) feels much more manageable than half an hour. The Silver Line is not necessarily the more prompt or reliable bus, but it is the more convenient system, once a rider understands the differences. And in a city metropolitan enough to need a bus system, but too suburban for it to be comprehensive yet, the Silver Line feels aspirational. I’m excited to see what it’s trying, and I hope it develops further.
+                </p>
+                <p><a href="https://cotterkoopman.com/">← cotterkoopman.com</a></p>
+            </div>
+        </details>
+    </body>
+</html>
