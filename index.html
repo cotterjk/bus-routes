@@ -80,10 +80,10 @@
                 One is the Rapid route #1, which operates in a very recognizable way: riders wait at stops along the road, where the bus arrives roughly every half hour. They scan their refillable fare card against a panel by the driver’s door before taking their seat. Riders have to pull a hanging cord to request a stop. If no one is waiting to get on at a stop, and if no one pulls the cord, the driver carries on without slowing down.
                 </p>
                 <p>
-                The other is the Silver Line, Michigan’s first <a target="_blank" href="https://en.wikipedia.org/wiki/Bus_rapid_transit">bus rapid transit system</a>. This means it runs more like a train: Passengers hop on and off through automatic doors with a fare card they’re supposed to validate beforehand on the designated platforms. (Occasionally there are fare enforcement officers aboard to check tickets, which I’ve <a target="_blank" href="https://cotterjk.github.io/bus/">written about before.</a>) The platforms are raised, to be flush with the bus' boarding level. For a stretch of the route, no fare is required or enforced, though not the stretch I ride. The bus stops at every platform, so riders don’t request stops with a cord. For some stretches, it has a designated lane and left turn light. Most of the day, it comes every 15 minutes.
+                The other is the Silver Line, Michigan’s first <a target="_blank" href="https://en.wikipedia.org/wiki/Bus_rapid_transit">bus rapid transit system</a>. This means it runs more like a train: passengers hop on and off through automatic doors with a fare card they’re supposed to validate beforehand on the designated platforms. (Occasionally there are fare enforcement officers aboard to check tickets, which I’ve <a target="_blank" href="https://cotterjk.github.io/bus/">written about before.</a>) The platforms are raised, to be flush with the bus' boarding level. For a stretch of the route, no fare is required or enforced, though not the stretch I ride. The bus stops at every platform, so riders don’t request stops with a cord. For some stretches, it has a designated lane and left-turn light. Most of the day, it comes every 15 minutes.
                 </p>
                 <p>
-                Hanging from the Silver Line’s platforms is a gold marquee sign, displaying the estimated arrival time for the next few buses, which respond as the bus runs late or early. (Regular bus routes used to post a paper schedule for that stop, with no indication of where an actual bus was, now. They’ve recently replaced even that with a QR code...)
+                Hanging from the Silver Line’s platforms is an LED sign, displaying the estimated arrival time for the next few buses. These signs adjust as the bus runs late or early. (Regular bus routes used to post a paper schedule for that stop, but with no indication of where an actual bus was, now. They’ve recently replaced even that with a QR code...)
                 </p>
             </div>
         </div>
@@ -98,7 +98,7 @@
             I used to take the #1 home since there was a stop mere feet from my office door, but during rush hour and in the snow, it proved too unreliable. I have to walk a few blocks to the Silver Line stop, and I often just miss one, but another comes in half the time. Besides, Google Maps and the posted schedules told me that the Silver Line was the better choice.
             </p>
             <p>
-            But I wondered, if I could plot all those true deviations from that schedule, how would the different buses, the different bussing systems, compare? And the Silver Line’s hanging displays implied that this realistic data was available.
+            But I wondered, if I could plot all those true deviations from that schedule, how would the different buses—the different bussing systems—compare? And the Silver Line’s hanging displays implied that this realistic data was available.
             </p>
         </div>
         <div class="row" class="image-container">
@@ -142,7 +142,7 @@
             <div class="row justify-content-center sketches-container">
                 <div class="col-sm-4 sketch-container">
                     <img src="assets/concepts/design-02.png">
-                    <p class="sketch-caption">This was how I exported the sketches from Processing. This is the shape I took into Illustrator even though I didn’t want to use it, since it encoded data in both length and stroke weight, which I could collapse later as I experimented. More opaque indicates more frequently late. This opacity was hard to distinguish, the length and stroke weight was redundant but distracting, and the overlapping lines took no advantage of the vertical dimension.</p>
+                    <p class="sketch-caption">This was how I exported the sketches from Processing. This is the shape I took into Illustrator even though I didn’t want to use it, since it encoded data in both length and opacity, which I could collapse later as I experimented. More opaque indicates more frequently late. This opacity was hard to distinguish, the length was redundant but distracting, and the overlapping lines took no advantage of the vertical dimension.</p>
                 </div>
                 <div class="col-sm-4 sketch-container">
                     <img src="assets/concepts/design-03.png">
@@ -156,11 +156,11 @@
             <div class="row justify-content-center sketches-container">
                 <div class="col-sm-4 sketch-container">
                     <img src="assets/concepts/design-01.png">
-                    <p class="sketch-caption">Instead of stroke width, I tried distributing the instances shifted down by their lateness. This was redundant to the line length. The endpoints always traced a straight line down, at the same angle.</p>
+                    <p class="sketch-caption">Instead of opacity and length, I tried distributing the instances shifted down by their lateness. This was redundant to the line length. The endpoints always traced a straight line down, at the same angle.</p>
                 </div>
                 <div class="col-sm-4 sketch-container">
                     <img src="assets/concepts/design-05.png">
-                    <p class="sketch-caption">Evenly spacing each instance and sorting by their lateness exposed a curve which actually indicated something. The vertical stacked up how many times the bus was late, while the horizontal length encodes the late-ness. Sort of quality and quantity. No stroke width or opacity needed. This gave me the most communicative shape in the plainest way. Rotating this and putting the times in the middle gave me a nice scrollable side-by-side comparison.</p>
+                    <p class="sketch-caption">Evenly spacing each instance and sorting by their lateness exposed a curve which actually indicated something. The vertical stacked up how many times the bus was late, while the horizontal length encodes the late-ness. Sort of like 'quality and quantity.' No stroke width or opacity needed. This gave me the most communicative shape in the plainest way. Rotating this and putting the times in the middle gave me a nice scrollable side-by-side comparison.</p>
                 </div>
             </div>
             </div>
